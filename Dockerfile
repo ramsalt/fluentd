@@ -11,8 +11,8 @@ RUN apk add --no-cache --update --virtual .build-deps \
  && apk del .build-deps \
  && rm -rf /home/fluent/.gem/ruby/2.5.0/cache/*.gem
 
-ENV FLUENT_ELASTICSEARCH_HOST elasticsearch
-ENV FLUENT_ELASTICSEARCH_PORT 9200
+ENV FLUENT_ELASTICSEARCH_HOST=elasticsearch
+ENV FLUENT_ELASTICSEARCH_PORT=9200
 
 COPY fluent.conf /fluentd/etc/
 COPY entrypoint.sh /bin/
