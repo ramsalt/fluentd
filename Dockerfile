@@ -8,7 +8,7 @@ RUN apk add --no-cache --update --virtual .build-deps \
  # cutomize following instruction as you wish
  && sudo gem install elasticsearch --version='~>7.0' \
  && sudo gem install fluent-plugin-elasticsearch \
- && sudo gem install fluent-plugin-wodby \
+ && sudo gem install fluent-plugin-wodby --version=">=0.1.8" \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /home/fluent/.gem/ruby/2.5.0/cache/*.gem
