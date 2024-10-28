@@ -1,5 +1,6 @@
 # fluentd
-Custom fluentd Docker image with elasticsearch output
+
+Custom fluentd Docker image with opensearch output, based on Wodby
 
 ## Upgrading
 
